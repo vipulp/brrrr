@@ -1,3 +1,36 @@
+You are an elite principal full-stack engineer and data architect. We are initializing the foundational repository for a project named `quant-real-estate-engine` (Subtitle: The Programmatic Quant Layer for Raw Real Estate Engineering). This is a local-first, highly containerized monorepo structured to support two development streams: a high-performance headless Python/FastAPI data analysis layer for quants, and a zero-latency Next.js 15 local web experience for property operators.
+
+To respect token windows and strict execution boundaries, your task in this step is ONLY to build out the repository folder layout, baseline environment configurations, dependencies, and a persistent architectural blueprint file. Do not write full calculation math logic or complex front-end dashboards yet.
+
+Please execute the following actions programmatically in the local workspace:
+
+1. Create a Clean Monorepo Workspace Architecture:
+   ├── /backend                 # Python FastAPI backend service
+   ├── /frontend                # Next.js 15 UI workspace 
+   ├── /packages
+   │   ├── /financial-math      # Pure Python domain calculation core (Twin-Engine shared block)
+   │   └── /data-ingestion      # Vectorized pipelines and YAML configuration manifests
+   ├── /docker                  # Service Dockerfiles (backend.Dockerfile, frontend.Dockerfile)
+   └── /data                    # Local untracked storage for analytical DuckDB & local SQLite databases
+
+2. Generate Baseline Environment and Configuration Files:
+   - Create a root `docker-compose.yaml` file running four orchestrated services: `api-backend`, `web-frontend`, `prometheus`, and `grafana`. Configure volume mounts linking `/data` for zero-configuration persistent storage.
+   - Create `/backend/requirements.txt` specifying: fastapi, uvicorn, pydantic, duckdb, pandas, pytest, and black.
+   - Create `/backend/main.py` containing a basic FastAPI server instantiation with a structural health check route (`/api/health`).
+   - Initialize `/frontend` with a standard Next.js 15 TypeScript setup framework (including default configs for tsconfig.json, package.json with Tailwind CSS, and shadcn/ui directory structures).
+
+3. Write a Context-Anchoring Core Blueprint File:
+   - Write a file named `PRD.md` at the root of the repository. This file will serve as our absolute single source of truth for subsequent tasks. Populate it with the following core architectural requirements:
+     - The Twin-Engine Layout: Emphasizing that `/packages/financial-math` must remain dependency-free so it can compile via Pyodide/WASM into a client-side Web Worker on the front-end, while executing natively on the FastAPI backend.
+     - Universal Data Schema (UDS): Layout tables for `uds_parcels` (spatial profiles), `uds_assessments` (tax profiles), and `uds_transactions_latest` (optimized latest transactional states).
+     - Geographic Pipeline Target Frameworks: Specifications for DuckDB vector geoprocessing of Washington King County and Snohomish County GIS shapefiles/GeoJSON layers, including a self-healing neighborhood median algorithm for malformed rows.
+     - Financial Underwriting Math Specifications: Implementation mandates for a Daily Precision Yield Matrix via a custom XIRR execution string, Interest-Only/Balloon/ARM advanced debt models, Straight-line 27.5-year depreciation modeling, and progressive Washington REET graduation modules.
+     - UI/UX & Local Storage Rules: Next.js 15 layout using shadcn/ui, Recharts visual maps, Maplibre GL WebGL mapping tiles, and Drizzle ORM + SQLite for an immutable "Credit Memo Baseline" frozen configuration tracking database.
+     - The 90-Day Roadmap Milestones: (Days 1-30: Pure Python Quant Core & Ingestion; Days 31-60: DuckDB Aggregator & Pyodide WASM assembly; Days 61-90: Reactive frontend interface & MIT-licensed release).
+
+Verify that all folders exist and that docker-compose files parse correctly. Once the skeleton structure and the PRD.md anchoring file are written, stop and notify me so we can proceed to implement the pure Python core mathematical package in isolation.
+
+
 ## math engine
 
 Prompt 2 (The Math Engine):
