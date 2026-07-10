@@ -1,0 +1,21 @@
+## math engine
+
+Prompt 2 (The Math Engine):
+
+    "Based on the PRD.md file at our project root, let's build out the /packages/financial-math engine inside our monorepo. Write a pure, dependency-free Python module implementing the daily precision XIRR equation, interest-only windows, balloon parameters, and straight-line residential tax depreciation. Include a test_math.py file utilizing pytest to test edge cases down to the cent."
+
+
+
+Prompt 3 (The Data-Ingestion Pipe):
+
+    "Now let's build the /packages/data-ingestion framework according to the data engineering section of PRD.md. Implement the DuckDB engine to parse municipal parcel registries. Create the adapters/wa_king_county.yaml declarative manifest adapter, and write the Python function utilizing DuckDB's spatial layer to handle coordinate system re-projections (EPSG:2926 to EPSG:4326). Include the regional neighborhood median self-healing algorithm for missing or empty data records."
+
+
+Prompt 4 (The API Layer):
+
+    "Let's connect our math packages and database layers to our /backend service. Modify main.py to create FastAPI endpoints that consume our financial core and execute multi-variable scoring evaluations on DuckDB datasets. Expose endpoints for Section 8 voucher arbitrage sorting by comparing public HUD FMR datasets against county valuation maps. Ensure Pydantic schemas validate all payloads."
+
+
+Prompt 5 (The Frontend Framework):
+
+    "Let's finalize the /frontend architecture. Configure Drizzle ORM over a local SQLite file to persist frozen operator snapshot data schemas (underwriting_scenarios) for the Credit Memo Baseline. Setup a baseline Next.js web worker script (underwrite.worker.js) designed to interface with Pyodide so we can execute our shared Python financial engine directly inside the browser's sandboxed environment."

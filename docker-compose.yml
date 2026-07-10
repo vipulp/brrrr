@@ -1,0 +1,26 @@
+version: '3'
+services:
+  api-backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./data:/app/data
+    ports:
+      - 8000:8000
+  web-frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    volumes:
+      - ./data:/app/data
+    ports:
+      - 3000:3000
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3001:3000
