@@ -60,3 +60,45 @@ BRRR stands for:
         |       REPEAT         |
         |  Next deal, same $   |
         +----------------------+
+```
+# Features & Roadmap
+## Current & Planned Modules
+
+* Deal Analyzer   -     Purchase price, ARV, all-in cost, max-offer rules.
+* Rehab Estimator -     Scope-of-work templates, budget modeling, ARV impact.
+* Rent Comps & Income Tools  -     Rent comps, vacancy assumptions, DSCR, cash flow projections.
+* Refinance Calculator  -     Cash-out refi scenarios, LTV constraints, capital recycled.
+* Templates & Examples  -     Spreadsheets, notebooks, CLI workflows, example deals.
+
+Note - These modules will be built progressively. The README will evolve as the repo grows.
+
+
+# Installation & Usage
+
+Coming soon
+
+# External Resources
+A curated list of high-quality BRRR and real estate investing resources will be included, such as:
+* Strategy explainers
+* BRRR walkthroughs
+* Rental property calculators
+* DSCR loan guides
+* Real estate analysis blogs
+* YouTube channels focused on BRRR
+
+# Contributions
+ Stay tuned. coming soon
+
+
+# Roadmap
+Short Term
+    Core calculators
+    BRRR walkthrough notebook
+    Initial templates & CLI tools
+Medium Term
+    Rent comps tooling
+    Rehab estimator
+    Portfolio analytics
+Long Term
+    Full BRRR workflow framework
+    Broader real estate investing modules
